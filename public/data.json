@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "title": " FruitHub ",
+    "img": "https://i.ibb.co/ymg6GJTn/Screenshot-2026-01-02-151155.png",
+    "paragraph": " FruitHub  is a fully responsive real estate platform built using the MEARN stack for modern property management.",
+    "technology": [
+      "Next.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "framer-motion",
+      "react-hot-toast"
+    ],
+    "challenges": "Implementing secure authentication and role-based access control.",
+    "futureUpdate": "AI-based property recommendations and interactive 3D property views.",
+    "sub_title":"FruitHub — Fresh Fruits E-commerce Platform",
+    "description":"",
+    "git-repo":"https://github.com/rifatsamjid/my-products",
+    "live":"https://my-products-lime.vercel.app/"
+  },
+  {
+    "id": "2",
+    "title": "MovieMaster Pro",
+    "img": "https://i.ibb.co/S7Vwrn9N/Screenshot-2026-01-02-151225.png",
+    "paragraph": "TaskFlow is a simple task management web app designed to improve productivity and team collaboration.",
+    "technology": [
+      "React.js",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js",
+      "Express.js"
+    ],
+    "challenges": "Handling real-time task updates and user synchronization.",
+    "futureUpdate": "Adding team chat, task analytics, and AI-powered task suggestions.",
+    "sub_title":" MovieMaster Pro — A Modern Movie Management Platform",
+    "description":"",
+    "git-repo":"https://github.com/rifatsamjid/assignment--ten-client",
+    "live":"https://assignment-ten-76e7a.web.app/"
+  }
+]
