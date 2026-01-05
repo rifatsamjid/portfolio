@@ -5,6 +5,19 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Banner = () => {
+  const resumeUrl =
+    "https://drive.google.com/uc?export=download&id=1DZlx3ylrHRN-PrPuujDchwi3sVd5GXrU";
+
+  const handleDownload = () => {
+    // Create a temporary link and trigger download
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Rifat-Samjid-Resume.pdf"; // Optional: sets the saved file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="mt-20 lg:mt-28 min-h-screen lg:min-h-0 flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-16 px-6 lg:px-12 max-w-7xl mx-auto">
       {/* Left Side - Text */}
@@ -31,15 +44,18 @@ const Banner = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+          <button
+            onClick={handleDownload}
+            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
             Download Resume
           </button>
         </div>
 
-        {/* Social Icons - Properly Styled */}
+        {/* Social Icons */}
         <div className="flex justify-center lg:justify-start gap-8 mt-8">
           <a
-            href="https://www.facebook.com/ri.f.at.906819" // Replace with your link
+            href="https://www.facebook.com/ri.f.at.906819"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl text-blue-600 hover:text-blue-800 transform hover:scale-125 transition-all duration-300"
@@ -49,7 +65,7 @@ const Banner = () => {
           </a>
 
           <a
-            href="https://github.com/rifatsamjid" // Replace with your link
+            href="https://github.com/rifatsamjid"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl text-gray-800 hover:text-black transform hover:scale-125 transition-all duration-300"
@@ -59,7 +75,7 @@ const Banner = () => {
           </a>
 
           <a
-            href="mailto:rifattamim74328@gmail.com" // Replace with your email
+            href="mailto:rifattamim74328@gmail.com"
             className="text-4xl text-red-600 hover:text-red-800 transform hover:scale-125 transition-all duration-300"
             aria-label="Email"
           >
@@ -67,7 +83,7 @@ const Banner = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/rifat-samjid/" // Replace with your link
+            href="https://www.linkedin.com/in/rifat-samjid/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl text-blue-700 hover:text-blue-900 transform hover:scale-125 transition-all duration-300"
