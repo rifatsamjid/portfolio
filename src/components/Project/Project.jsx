@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Project = ({ projects }) => {
   return (
-    <section className="mt-20 lg:mt-32 py-16 px-6 lg:px-12 bg-gray-900">
+    <section className="mt-20 mb-24 rounded-sm lg:mt-32 py-16 px-6 lg:px-12 bg-gray-900">
       {/* Section Title */}
       <h2 className="text-5xl md:text-6xl font-bold text-center mb-20 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
         Projects
