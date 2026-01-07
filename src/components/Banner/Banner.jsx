@@ -9,10 +9,10 @@ const Banner = () => {
     "https://drive.google.com/uc?export=download&id=1DZlx3ylrHRN-PrPuujDchwi3sVd5GXrU";
 
   const handleDownload = () => {
-    // Create a temporary link and trigger download
+   
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Rifat-Samjid-Resume.pdf"; // Optional: sets the saved file name
+    link.download = "Rifat-Samjid-Resume.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

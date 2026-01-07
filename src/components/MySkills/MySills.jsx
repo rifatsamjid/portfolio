@@ -16,13 +16,13 @@ const MySkills = () => {
         alt={label}
         className="w-24 h-24 object-contain mb-4 drop-shadow-md"
       />
-      <p className="text-gray-700 font-medium text-lg">{label}</p>
+      <p className=" font-medium text-lg">{label}</p>
     </div>
   );
 
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+      <h2 className="text-4xl font-bold text-center mb-12 ">
         My Skills
       </h2>
 
@@ -42,7 +42,7 @@ const MySkills = () => {
 
       {/* Backend Skills */}
       <div className="mb-16">
-        <h3 className="text-3xl font-semibold text-center mb-8 text-gray-700">
+        <h3 className="text-3xl font-semibold text-center mb-8 ">
           Backend
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center ">
@@ -53,7 +53,7 @@ const MySkills = () => {
 
       {/* Tools */}
       <div>
-        <h3 className="text-3xl font-semibold text-center mb-8 text-gray-700">
+        <h3 className="text-3xl font-semibold text-center mb-8 ">
           Tools
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">

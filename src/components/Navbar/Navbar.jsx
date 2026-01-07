@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,21 +18,21 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold tracking-wide">
+            <Link to="/" className="text-2xl font-bold tracking-wide">
               Rifat Tamim
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex  items-baseline space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="transition-all 
+                  className="transition-all text-xl
                      hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-700 
-                     hover:text-cyan-100 hover:scale-105 hover:shadow-lg px-3 py-2 rounded-md text-sm font-medium  duration-300"
+                     hover:text-cyan-100 hover:scale-105 hover:shadow-lg px-3 py-2 rounded-md  font-medium  duration-300"
                 >
                   {link.name}
                 </a>

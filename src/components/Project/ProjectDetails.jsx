@@ -9,12 +9,12 @@ const ProjectDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6">
+    <div className="min-h-screen mt-16 bg-gray-50 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Back Button - Top Left of Image */}
         <button
           onClick={handleGoBack}
-          className="absolute top-20 left-52 flex items-center gap-2 px-5 py-3 bg-black text-white font-medium rounded-lg shadow-lg hover:bg-gray-600 transition transform hover:scale-105"
+          className="absolute top-28 left-4 lg:left-52 flex items-center gap-2 px-5 py-3 bg-black text-white font-medium rounded-lg shadow-lg hover:bg-gray-600 transition transform hover:scale-105"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
