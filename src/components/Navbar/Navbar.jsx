@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
+import image from "../../assets/professional.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold tracking-wide">
-              Rifat Tamim
+              <img className="w-14 h-14 rounded-full" src={image} alt="" />
             </Link>
           </div>
 
